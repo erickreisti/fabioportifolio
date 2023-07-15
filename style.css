@@ -26,6 +26,7 @@ body {
   font-weight: 300;
   color: var(--color-font);
   line-height: 1.9;
+  background-color: #f5f2f2;
 }
 
 .btn {
@@ -158,7 +159,7 @@ a:hover::before {
   transform: translateY(-6rem);
   border-top: 2px solid var(--color-primary);
   border-right: 2px solid var(--color-primary);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 .shape-1 {
@@ -237,7 +238,7 @@ a:hover::before {
 
 .practices-card {
   position: relative;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 2rem 2rem;
   width: clamp(300px, 60%, 400px);
 }
@@ -275,4 +276,19 @@ a:hover::before {
   top: 50%;
   right: 0;
   background-color: var(--color-primary);
+}
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.about__img {
+  border-radius: 1% 10% 1% 10%;
+}
+
+.about-description {
 }
