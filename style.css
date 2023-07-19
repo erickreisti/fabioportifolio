@@ -156,7 +156,7 @@ a:hover::before {
   width: 90%;
   grid-column: 2 / 3;
   grid-row: 1 / span 4;
-  transform: translateY(-6rem);
+  /* transform: translateY(-6rem); */
   border-top: 2px solid var(--color-primary);
   border-right: 2px solid var(--color-primary);
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
@@ -164,6 +164,7 @@ a:hover::before {
 
 .shape-1 {
   position: relative;
+  grid-row: 4 / span 2;
   /* top: 605px;
   left: 150px; */
   width: 100px;
