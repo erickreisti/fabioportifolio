@@ -8,7 +8,11 @@
   --color-secondary: #b3b5b6;
   --color-tertiary: #3d2500;
   --color-font: #444;
+  --color-background: #f5f2f2;
+  --color-section: #e9e9e9;
 }
+
+/* RESET */
 
 * {
   margin: 0;
@@ -26,7 +30,15 @@ body {
   font-weight: 300;
   color: var(--color-font);
   line-height: 1.9;
-  background-color: #f5f2f2;
+  background-color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
 }
 
 .btn {
@@ -71,8 +83,8 @@ body {
   z-index: 100;
 }
 
-.nav__logo {
-  height: 100%;
+.logo {
+  width: 160px;
 }
 
 .nav__links {
@@ -95,11 +107,11 @@ body {
   transition: all 0.3s;
 }
 
-a {
+.nav__link {
   position: relative;
 }
 
-a::before {
+.nav__link::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -113,7 +125,7 @@ a::before {
   transition: transform 0.3s ease-in-out;
 }
 
-a:hover::before {
+.nav__link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -213,7 +225,12 @@ a:hover::before {
   display: flex;
   justify-content: center;
   font-family: "Playfair Display", serif;
-  background-color: #eee;
+  background-color: var(--color-section);
+}
+
+.blockquote img {
+  max-width: 60px;
+  height: 60px;
 }
 
 .blockquote img:nth-child(1) {
@@ -242,6 +259,11 @@ a:hover::before {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 2rem 2rem;
   width: clamp(300px, 60%, 400px);
+}
+
+.practices-icon {
+  max-width: 60px;
+  height: 60px;
 }
 
 .practices-card__title {
@@ -287,7 +309,8 @@ a:hover::before {
   gap: 8rem;
 }
 
-.about__img {
+.about img {
+  max-width: 250px;
   border-radius: 1% 10% 1% 10%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -380,4 +403,70 @@ a:hover::before {
   border: 2px solid var(--color-primary);
   border-radius: 1% 10% 1% 10%;
   z-index: -99;
+}
+
+/* CONTACT */
+
+.footer {
+  padding: 10rem 0rem 0 0rem;
+  border-top: 1px solid #ddd;
+  /* background-color: var(--color-section); */
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts a {
+  font-size: 1.4rem;
+}
+
+.contact__img {
+  max-width: 250px;
+  filter: grayscale(20%);
+}
+
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.contact-socials h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  padding: 1rem 0 1rem 0;
+}
+
+.contact-socials a img {
+  max-width: 48px;
+}
+
+.contact-call {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.contact-call h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  padding: 1rem 0 1rem 0;
+}
+
+.footer__copyright {
+  font-size: 1.6rem;
+  color: #aaa;
+  text-align: center;
+  padding: 0.5rem 0rem;
+  background-color: var(--color-section);
+}
+
+.footer__link {
+  color: #1d1d1d;
 }
