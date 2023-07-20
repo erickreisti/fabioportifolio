@@ -101,6 +101,11 @@ p {
   transition: all 0.3s;
 }
 
+.btn--tooltip {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
 .sticky {
   position: fixed;
 }
@@ -563,8 +568,8 @@ p {
 
 .pulse-button {
   position: relative;
-  top: -35rem;
-  left: 32rem;
+  bottom: 10rem;
+  left: 20%;
   margin-left: -50px;
   margin-top: -50px;
   display: flex;
@@ -604,4 +609,18 @@ p {
     transform: scale(0.9);
     box-shadow: 0 0 0 2em rgba(215, 17, 73, 0);
   }
+}
+
+/* TOOLTIP */
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  width: 250px;
+  padding: 1rem;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
 }
