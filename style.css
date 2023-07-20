@@ -478,15 +478,15 @@ p {
 }
 
 .footer__copyright {
-  font-size: 1.6rem;
-  color: #aaa;
+  font-size: 1.4rem;
+  color: var(--color-background);
   text-align: center;
   padding: 0.5rem 3rem;
-  background-color: var(--color-section);
+  background-color: var(--color-primary);
 }
 
 .footer__link {
-  color: #1d1d1d;
+  color: #ffffff;
 }
 
 /* MOBILE */
