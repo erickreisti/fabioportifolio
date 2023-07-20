@@ -45,7 +45,7 @@ img {
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-size: clamp(3.8rem, 5vw, 5.5rem);
   line-height: 1.35;
 }
 
@@ -183,21 +183,23 @@ p {
   max-width: 115rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  row-gap: 3rem;
+  row-gap: 1rem;
   align-content: center;
   justify-content: center;
 
   align-items: start;
   justify-items: start;
 }
+
 .header h4 {
+  padding: 2rem 0;
   font-weight: 500;
 }
 
 .header__img {
   width: 90%;
   grid-column: 2 / 3;
-  grid-row: 1 / span 4;
+  grid-row: 1 / span 5;
   /* transform: translateY(-6rem); */
   border-top: 2px solid var(--color-primary);
   border-right: 2px solid var(--color-primary);
@@ -206,7 +208,7 @@ p {
 
 .shape-1 {
   position: relative;
-  grid-row: 4 / span 2;
+  grid-row: 5;
   width: clamp(20px, 50vw, 100px);
   height: 100px;
   background-color: var(--color-primary);
