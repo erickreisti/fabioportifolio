@@ -23,6 +23,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,7 +45,7 @@ img {
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(3.5rem, 50vw, 5.5rem);
+  font-size: clamp(3rem, 5vw, 5.5rem);
   line-height: 1.35;
 }
 
@@ -59,7 +60,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(2rem, 4vw, 2.2rem);
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
   line-height: 1.35;
 }
 
@@ -98,6 +99,10 @@ p {
   padding-bottom: 2px;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.sticky {
+  position: fixed;
 }
 
 /* NAVIGATION */
@@ -512,7 +517,7 @@ p {
     display: block;
   }
   .nav__links {
-    position: fixed;
+    position: absolute;
     top: 14rem;
     left: -1000px;
     row-gap: 4rem;
