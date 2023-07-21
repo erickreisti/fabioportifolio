@@ -384,6 +384,8 @@ p {
   justify-content: center;
   align-items: center;
   column-gap: 8rem;
+  row-gap: 8rem;
+  flex-wrap: wrap;
 }
 
 .benefits-description h2 {
@@ -408,11 +410,12 @@ p {
 }
 
 .benefits-description__img {
+  width: clamp(300px, 50vw, 450px);
   border-radius: 1% 10% 1% 10%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-/* 
-.benefits-after {
+
+/* .benefits-after {
   position: relative;
 }
 
@@ -421,8 +424,8 @@ p {
   position: absolute;
   top: -1rem;
   left: 15rem;
-  width: 400px;
-  height: 380px;
+  width: 280px;
+  height: 320px;
   border: 2px solid var(--color-primary);
   border-radius: 1% 10% 1% 10%;
   z-index: -99;
@@ -438,7 +441,7 @@ p {
 
 .contacts {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0 3rem;
 }
